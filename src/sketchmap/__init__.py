@@ -1,3 +1,8 @@
-"""Sketchmap: A Python project with Spec Kit for specification-driven development."""
+"""Sketchmap - Sketch-based map generation using AI."""
 
 __version__ = "0.1.0"
+
+from sketchmap.config import GenerationConfig
+from sketchmap.palette import ColorPalette, TerrainType
+
+__all__ = ["ColorPalette", "GenerationConfig", "TerrainType"]

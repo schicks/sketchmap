@@ -7,24 +7,24 @@
 ## Phase 1: Setup & Foundation
 
 ### Environment Setup
-- [ ] [T001] Create project directory structure (src/sketchmap/, tests/, examples/, docs/)
-- [ ] [T002] Initialize pyproject.toml with project metadata and dependencies
-- [ ] [T003] Configure development tools (pytest, mypy, ruff, black) in pyproject.toml
-- [ ] [T004] Create .gitignore for Python, models, and generated outputs
-- [ ] [T005] [P] Create README.md with project overview and installation instructions
-- [ ] [T006] [P] Create docs/palette_guide.md documenting color-to-terrain mappings
+- [X] [T001] Create project directory structure (src/sketchmap/, tests/, examples/, docs/)
+- [X] [T002] Initialize pyproject.toml with project metadata and dependencies
+- [X] [T003] Configure development tools (pytest, mypy, ruff, black) in pyproject.toml
+- [X] [T004] Create .gitignore for Python, models, and generated outputs
+- [X] [T005] [P] Create README.md with project overview and installation instructions
+- [X] [T006] [P] Create docs/palette_guide.md documenting color-to-terrain mappings
 
 ### Core Data Models - Testing First
-- [ ] [T007] Create tests/test_palette.py with test cases for ColorPalette class
-- [ ] [T008] Create src/sketchmap/palette.py with TerrainType enum and ColorPalette class
-- [ ] [T009] Implement ColorPalette.quantize_color() method with RGB distance calculation
-- [ ] [T010] Implement ColorPalette.get_terrain_type() method
-- [ ] [T011] Verify all tests/test_palette.py tests pass
+- [X] [T007] Create tests/test_palette.py with test cases for ColorPalette class
+- [X] [T008] Create src/sketchmap/palette.py with TerrainType enum and ColorPalette class
+- [X] [T009] Implement ColorPalette.quantize_color() method with RGB distance calculation
+- [X] [T010] Implement ColorPalette.get_terrain_type() method
+- [X] [T011] Verify all tests/test_palette.py tests pass
 
-- [ ] [T012] Create tests/test_config.py with test cases for GenerationConfig validation
-- [ ] [T013] Create src/sketchmap/config.py with GenerationConfig dataclass
-- [ ] [T014] Implement GenerationConfig.validate() method
-- [ ] [T015] Verify all tests/test_config.py tests pass
+- [X] [T012] Create tests/test_config.py with test cases for GenerationConfig validation
+- [X] [T013] Create src/sketchmap/config.py with GenerationConfig dataclass
+- [X] [T014] Implement GenerationConfig.validate() method
+- [X] [T015] Verify all tests/test_config.py tests pass
 
 - [ ] [T016] Create tests/test_sketch.py with test cases for SketchInput class
 - [ ] [T017] Create src/sketchmap/sketch.py with SketchInput class

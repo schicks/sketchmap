@@ -55,3 +55,16 @@ specs/*/checklists/*.generated.md
 # Environment variables
 .env
 .env.local
+
+# Sketchmap specific
+models/
+*.ckpt
+*.safetensors
+generated_outputs/
+output/
+*.png
+*.jpg
+!examples/*.png
+!examples/*.jpg
+!tests/fixtures/**/*.png
+!tests/fixtures/**/*.jpg
