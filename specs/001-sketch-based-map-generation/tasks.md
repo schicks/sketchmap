@@ -26,11 +26,11 @@
 - [X] [T014] Implement GenerationConfig.validate() method
 - [X] [T015] Verify all tests/test_config.py tests pass
 
-- [ ] [T016] Create tests/test_sketch.py with test cases for SketchInput class
-- [ ] [T017] Create src/sketchmap/sketch.py with SketchInput class
-- [ ] [T018] [US1] Implement SketchInput.__init__() with image loading and validation (PNG/JPG)
-- [ ] [T019] Implement SketchInput.extract_scribble() using Canny edge detection in src/sketchmap/preprocessing.py
-- [ ] [T020] Verify all tests/test_sketch.py tests pass
+- [X] [T016] Create tests/test_sketch.py with test cases for SketchInput class
+- [X] [T017] Create src/sketchmap/sketch.py with SketchInput class
+- [X] [T018] [US1] Implement SketchInput.__init__() with image loading and validation (PNG/JPG)
+- [X] [T019] Implement SketchInput.extract_scribble() using Canny edge detection in src/sketchmap/preprocessing.py
+- [X] [T020] Verify all tests/test_sketch.py tests pass
 
 ---
 

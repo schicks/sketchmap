@@ -101,6 +101,19 @@ strict_equality = true
 module = "tests.*"
 disallow_untyped_defs = false
 
+[[tool.mypy.overrides]]
+module = ["cv2", "cv2.*", "PIL", "PIL.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["sketchmap.sketch", "sketchmap.preprocessing"]
+# These modules have optional dependencies (PIL, cv2) that may not be installed
+disallow_untyped_defs = true
+warn_return_any = false
+ignore_errors = false
+# Allow any types for cv2/PIL interaction
+disallow_any_generics = false
+
 [tool.ruff]
 target-version = "py311"
 line-length = 88

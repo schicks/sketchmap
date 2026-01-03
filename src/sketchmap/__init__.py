@@ -4,5 +4,6 @@ __version__ = "0.1.0"
 
 from sketchmap.config import GenerationConfig
 from sketchmap.palette import ColorPalette, TerrainType
+from sketchmap.sketch import SketchInput
 
-__all__ = ["ColorPalette", "GenerationConfig", "TerrainType"]
+__all__ = ["ColorPalette", "GenerationConfig", "SketchInput", "TerrainType"]
