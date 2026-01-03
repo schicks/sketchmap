@@ -16,12 +16,14 @@ This project follows a spec-driven development approach using [GitHub Spec Kit](
 ```
 sketchmap/
 ├── .claude/
-│   └── commands/          # Spec Kit slash commands
-│       ├── speckit.constitution.md
-│       ├── speckit.specify.md
-│       ├── speckit.plan.md
-│       ├── speckit.tasks.md
-│       └── speckit.implement.md
+│   ├── commands/          # Spec Kit slash commands
+│   │   ├── speckit.constitution.md
+│   │   ├── speckit.specify.md
+│   │   ├── speckit.plan.md
+│   │   ├── speckit.tasks.md
+│   │   └── speckit.implement.md
+│   └── skills/            # Claude Code skills
+│       └── spec-kit.md    # Automatic spec kit workflow
 ├── memory/
 │   └── constitution.md    # Project governance principles
 ├── specs/                 # Feature specifications
@@ -36,7 +38,29 @@ sketchmap/
 
 ## Development Workflow
 
-### 1. Define Requirements
+This project supports two ways to use the spec-driven workflow:
+
+### Option 1: Claude Code (Recommended for Development)
+
+When using Claude Code, activate the **spec-kit skill** which provides automatic access to all spec kit features without slash commands:
+
+```
+Use the spec-kit skill for this feature
+```
+
+The skill will automatically guide you through the workflow:
+1. **Specify** - Define requirements and user stories
+2. **Plan** - Design technical implementation
+3. **Tasks** - Generate ordered task list
+4. **Implement** - Execute with TDD and quality gates
+
+The skill understands the project structure and will automatically detect which stage you're at and what to do next.
+
+### Option 2: Slash Commands (Claude.ai Web Interface)
+
+For the Claude.ai web interface, use the spec kit slash commands:
+
+#### 1. Define Requirements
 Use `/speckit.specify` to create a feature specification:
 ```
 /speckit.specify
@@ -49,7 +73,7 @@ This creates a specification in `specs/` with:
 - Success criteria
 - Data models
 
-### 2. Create Implementation Plan
+#### 2. Create Implementation Plan
 Use `/speckit.plan` to design the technical approach:
 ```
 /speckit.plan
@@ -61,7 +85,7 @@ This generates a plan with:
 - API contracts
 - Testing strategy
 
-### 3. Generate Task List
+#### 3. Generate Task List
 Use `/speckit.tasks` to break down the work:
 ```
 /speckit.tasks
@@ -69,7 +93,7 @@ Use `/speckit.tasks` to break down the work:
 
 This creates an ordered task list ready for implementation.
 
-### 4. Implement Feature
+#### 4. Implement Feature
 Use `/speckit.implement` to execute the tasks:
 ```
 /speckit.implement
